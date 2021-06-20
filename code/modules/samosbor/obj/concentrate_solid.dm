@@ -30,12 +30,12 @@
 	desc = "Tube of red solid concentrate. 60% nutritional value."
 	con_color = "red"
 
-/obj/item/weapon/reagent_containers/food/snacks/concentrate/solid/red/On_Consume(var/mob/M)
-	if(istype(M, /mob/living/carbon/human))
-		var/mob/living/carbon/human/H = M
-		H.SuccessWish("red_concentrate_wish")
+// /obj/item/weapon/reagent_containers/food/snacks/concentrate/solid/red/On_Consume(var/mob/M)
+// 	if(istype(M, /mob/living/carbon/human))
+// 		var/mob/living/carbon/human/H = M
+// 		H.SuccessWish("red_concentrate_wish")
 
-	..(M)
+// 	..(M)
 
 
 /obj/item/weapon/reagent_containers/food/snacks/concentrate/solid/green

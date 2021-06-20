@@ -2,11 +2,9 @@
 	title = "Utilizator"
 	supervisors = "Head of Utilizators"
 	minimal_player_age = 14
-	economic_modifier = 3
 	ideal_character_age = 25
 	total_positions = 2
 	alt_titles = null
-	faction = "Station"
 	selection_color = "#111111"
 	outfit_type = /decl/hierarchy/outfit/job/samosbor/utilizator
 
@@ -22,11 +20,9 @@
 	title = "Zavhoz"
 	supervisors = "Zavblok"
 	minimal_player_age = 14
-	economic_modifier = 3
 	ideal_character_age = 40
 	total_positions = 1
 	alt_titles = null
-	faction = "Station"
 	selection_color = "#111111"
 	outfit_type = /decl/hierarchy/outfit/job/samosbor/zavhoz
 

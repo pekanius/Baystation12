@@ -3,7 +3,7 @@
 	desc = "An old food vending machine"
 	icon = 'icons/samosbor/obj/misc.dmi'
 	icon_state = "food_disp"
-	products = list(/obj/item/weapon/reagent_containers/food/drinks/bottle/space_up = 30)
+	products = list(/obj/item/reagent_containers/food/drinks/bottle/premiumvodka = 30)
 //	contraband = list(/obj/item/weapon/reagent_containers/food/drinks/bottle/cola = 20)
 	idle_power_usage = 100
 //	vending_sound = "machines/vendingcans.ogg"
@@ -40,7 +40,7 @@
 	else if(istype(W, /obj/item/weapon/screwdriver))
 		src.panel_open = !src.panel_open
 		var/interact_sound = "[src.panel_open ? "open" : "close"]"
-		to_chat(user, "Ты откручиваешь панель тех.обслуживани&#255;.")
+		to_chat(user, "пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ.пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ&#255;.")
 		playsound(src.loc, "sound/machines/Custom_screwdriver[interact_sound].ogg", 50, 1)
 		src.overlays.Cut()
 		if(src.panel_open)
@@ -61,10 +61,10 @@
 	if(istype(I, /obj/item/weapon/disp_cartridge))
 		var/obj/item/weapon/disp_cartridge/D = I
 		if(D.cart_type != vending_type)
-			to_chat(user, "<span class='warning'>Не подходит.</span>")
+			to_chat(user, "<span class='warning'>пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.</span>")
 			return
 		else
-			to_chat(user, "<span class='notice'>Ты заправл&#255;ешь раздатчик.</span>")
+			to_chat(user, "<span class='notice'>пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ&#255;пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.</span>")
 
 			for(var/entry in D.items)
 				var/datum/stored_items/vending_products/product = new/datum/stored_items/vending_products(src, entry)
@@ -81,10 +81,10 @@
 
 /obj/machinery/vending/samosbor/proc/pay_with_talon(var/obj/item/weapon/talon/T)
 	if(T.talon_type != vending_type)
-		to_chat(usr, "\icon[T] <span class='warning'>Этот талон не подходит.</span>")
+		to_chat(usr, "\icon[T] <span class='warning'>пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.</span>")
 		return 0
 
-	visible_message("<span class='info'>\The [usr] вставл&#255;ет талон в \the [src].</span>")
+	visible_message("<span class='info'>\The [usr] пїЅпїЅпїЅпїЅпїЅпїЅ&#255;пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ \the [src].</span>")
 
 	usr.drop_from_inventory(T)
 	qdel(T)

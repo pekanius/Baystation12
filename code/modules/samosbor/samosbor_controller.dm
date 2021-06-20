@@ -23,7 +23,7 @@ var/global/datum/controller/subsystem/samosbor/Samosbor = null
 /proc/StartSamosbor()
 	Samosbor.StartSamosbor()
 
-/datum/controller/subsystem/samosbor/setup()
+/datum/controller/subsystem/samosbor/Initialize()
 	name = "samosbor"
 	Samosbor = src
 	wait = 10

@@ -1,20 +1,28 @@
+// /datum/happiness_event
+// 	var/description
+// 	var/happiness = 0
+// 	var/timeout = 0
 
-/datum/happiness_event/concentrate
-	description = "<span class='info'>Я съел концентрат.</span>\n"
-	happiness = 5
-	timeout = 3000
 
-/datum/happiness_event/concentrate_red
-	description = "<span class='binfo'>Этот красный гелевый концентрат просто великолепен!</span>\n"
-	happiness = 10
-	timeout = 6000
+// //Do some shit
+// /datum/happiness_event/proc/OnTimeout()
+// 	return
+// /datum/happiness_event/concentrate
+// 	description = "<span class='info'>пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.</span>\n"
+// 	happiness = 5
+// 	timeout = 3000
 
-/datum/happiness_event/concentrate_desired
-	description = "<span class='binfo'>Съел тот концентрат, который хотел.</span>\n"
-	happiness = 20
-	timeout = 12000
+// /datum/happiness_event/concentrate_red
+// 	description = "<span class='binfo'>пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ!</span>\n"
+// 	happiness = 10
+// 	timeout = 6000
 
-/datum/happiness_event/round_wish
-	description = "<span class='info'>Я исполнил своё давнее желание.</span>\n"
-	happiness = 20
-	timeout = 120000
+// /datum/happiness_event/concentrate_desired
+// 	description = "<span class='binfo'>пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ.</span>\n"
+// 	happiness = 20
+// 	timeout = 12000
+
+// /datum/happiness_event/round_wish
+// 	description = "<span class='info'>пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ.</span>\n"
+// 	happiness = 20
+// 	timeout = 120000

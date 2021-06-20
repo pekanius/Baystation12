@@ -36,5 +36,3 @@
 	icon_state = "closed"
 	density = 1
 	anchored = 1
-
-/obj/machinery/bioreactor/proc/Open()

@@ -24,12 +24,12 @@
 	return
 
 /obj/structure/foamedmetal/concrete/attackby(var/obj/item/I, var/mob/user)
-	if(istype(I, /obj/item/weapon/grab))
-		var/obj/item/weapon/grab/G = I
-		G.affecting.loc = src.loc
-		visible_message("<span class='warning'>[G.assailant] smashes [G.affecting] through the concrete wall.</span>")
-		qdel(I)
-		return
+	// if(istype(I, /obj/item/weapon/grab))
+	// 	var/obj/item/weapon/grab/G = I
+	// 	G.affecting.loc = src.loc
+	// 	visible_message("<span class='warning'>[G.assailant] smashes [G.affecting] through the concrete wall.</span>")
+	// 	qdel(I)
+	// 	return
 
 	to_chat(user, "<span class='notice'>You hit the concrete to no effect.</span>")
 
@@ -55,7 +55,7 @@
 			return ..()
 		M.Weaken(1)
 		M.Stun(2)
-		M << "Вы в&#255;знете в бетонной массе..."
+		M << "пїЅпїЅ пїЅ&#255;пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ..."
 
 	..()
 

@@ -12,6 +12,7 @@
 	var/floor_type = /turf/simulated/floor/tiled/dark
 	var/door_type =  /obj/machinery/door/airlock/lift
 	var/firedoor_type = /obj/machinery/door/firedoor
+	var/z_step = 1
 
 	var/list/areas_to_use = list()
 
@@ -126,7 +127,7 @@
 			light_y2 = uy + lift_size_y - 1
 
 	// Generate each floor and store it in the controller datum.
-	for(var/cz = uz;cz<=ez;cz++)
+	for(var/cz = uz;cz<=ez;cz += z_step)
 
 		var/datum/turbolift_floor/cfloor = new()
 		lift.floors += cfloor

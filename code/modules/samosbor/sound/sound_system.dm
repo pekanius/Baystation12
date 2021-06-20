@@ -76,7 +76,7 @@ atom
 		var/stat = 0
 		var/vol
 		var/distance
-		for(var/mob/M in player_list) //First we stoping leaved mobs ambient.
+		for(var/mob/M in GLOB.player_list) //First we stoping leaved mobs ambient.
 			if(!M.client)
 				continue
 
