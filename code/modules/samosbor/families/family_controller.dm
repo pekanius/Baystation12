@@ -10,15 +10,15 @@ var/global/datum/controller/subsystem/families/families_controller
 	var/list/families = list()
 
 
-/datum/controller/subsystem/families/setup()
+/datum/controller/subsystem/families/Initialize()
 	name = "Families"
 	wait = 100
 	families_controller = src
-	job_master.ResetOccupations(1)
+	SSjobs.reset_occupations()
 
 /datum/controller/subsystem/families/fire(resumed = 0)
-	job_master.ResetOccupations(0)
-	job_master.DivideOccupations(0)
+	SSjobs.reset_occupations()
+	SSjobs.divide_occupations(config.pick_mode("extended"))
 	spawn_families()
 
 /datum/controller/subsystem/families/proc/spawn_families()
@@ -50,7 +50,7 @@ var/global/datum/controller/subsystem/families/families_controller
 
 
 				var/datum/family_record/fr = new()
-				fr.surname = pick(rus_last_names)
+				fr.surname = pick(GLOB.rus_last_names)
 				fr.players = f
 
 				families += fr
@@ -58,24 +58,24 @@ var/global/datum/controller/subsystem/families/families_controller
 				var/id = families.Find(fr)
 
 				for(var/mob/new_player/p in fr.players)
-					var/datum/spawnpoints/S = family_join["[id]"]
+					var/datum/spawnpoints/S = GLOB.family_join["[id]"]
 
 					var/turf/T = get_turf(S.PickPoint())
 
 					p.mind.family_id = id
 
-					p.client.prefs.char_rank = p.mind.assigned_role
+					p.char_rank = p.mind.assigned_role
 
 
 					if(p.mind.assigned_role == "Dweller")
 						var/mob/living/C = p.create_character(T, fr.surname)
 						if(C)
-							job_master.EquipRank(C, C.mind.assigned_role, 0)
+							SSjobs.equip_rank(C, C.mind.assigned_role, 0)
 							// UpdateFactionList(player)
 							qdel(player)
 					else
 						var/mob/living/C = p.create_character(null, fr.surname)
 						if(C)
-							job_master.EquipRank(C, C.mind.assigned_role, 0)
+							SSjobs.equip_rank(C, C.mind.assigned_role, 0)
 							// UpdateFactionList(C)
 							qdel(player)

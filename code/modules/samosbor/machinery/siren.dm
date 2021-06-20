@@ -20,7 +20,7 @@
 		clear = 0
 		is_playing = 1
 
-/obj/machinery/samosbor_siren/process()
+/obj/machinery/samosbor_siren/Process()
 	if(world.time < next_samosbor_act)
 		icon_state = "siren1"
 		EmitSound(name, siren_sound, radius, channel, volume_offset  = 0)

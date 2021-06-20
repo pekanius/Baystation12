@@ -15,8 +15,8 @@
 /obj/effect/decal/cleanable/samosbor_gibs/attackby(var/obj/item/O as obj, var/mob/user as mob)
 	..()
 
-	if(istype(O, /obj/item/weapon/reagent_containers/glass))
-		var/obj/item/weapon/reagent_containers/glass/G = O
+	if(istype(O, /obj/item/reagent_containers/food/drinks/glass2))
+		var/obj/item/reagent_containers/food/drinks/glass2/G = O
 		reagents.trans_to(G, volume)
 		qdel(src)
 

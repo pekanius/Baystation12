@@ -49,13 +49,12 @@
 				update_icon()
 
 
-/obj/machinery/space_heater/plitka/process()
-	if(on)
-		if(gas && gas.amount)
-			for(var/obj/item/weapon/reagent_containers/RC in loc.contents)
-				var/datum/reagents/R = RC.reagents
-				R.adjust_energy(energy)
-				gas.use(1)
-		else
-			on = 0
-		update_icon()
+// /obj/machinery/space_heater/plitka/process()
+// 	if(on)
+// 		if(gas && gas.amount)
+// 			for(var/obj/item/weapon/reagent_containers/RC in loc.contents)
+// 				var/datum/reagents/R = RC.reagents
+// 				gas.use(1)
+// 		else
+// 			on = 0
+// 		update_icon()

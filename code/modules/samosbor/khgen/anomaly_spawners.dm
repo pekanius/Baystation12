@@ -30,8 +30,8 @@
 
 /obj/anomaly_spawner/custom_spawner/Spawn()
 	//custom code
-	if(Holiday)
-		var/obj/item/weapon/reagent_containers/canister/C = new(get_turf(src))
-		C.reagents.add_reagent("samognoy", C.volume)
+	// if(Holiday)
+	// 	var/obj/item/weapon/reagent_containers/canister/C = new(get_turf(src))
+	// 	C.reagents.add_reagent("samognoy", C.volume)
 
 	qdel(src)

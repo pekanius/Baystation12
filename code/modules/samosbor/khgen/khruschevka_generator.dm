@@ -262,7 +262,7 @@
 
 	for(var/group in beds)
 
-		var/family_len = family_join.len + 1
+		var/family_len = GLOB.family_join.len + 1
 		var/datum/spawnpoints/S  = new()
 
 		var/obj/machinery/door/airlock/germa/G = germas[group]
@@ -275,12 +275,12 @@
 				S.Add(B.loc)
 
 		if(S.points.len)
-			global.family_join["[family_len]"] = S
+			GLOB.family_join["[family_len]"] = S
 
 
 
 
-/obj/effect/kh_spawner/proc/Initialize()
+/obj/effect/kh_spawner/Initialize()
 	//warning("S INIT")
 	for(var/turf/T in NewTurfs)
 		//new /atom/movable/lighting_overlay(T, TRUE)

@@ -8,7 +8,7 @@
 	icon_state = "radio[b_stat]"
 
 
-/obj/item/device/radio/intercom/old_radio/process()
+/obj/item/device/radio/intercom/old_radio/Process()
 	if(((world.timeofday - last_tick) > 30) || ((world.timeofday - last_tick) < 0))
 		last_tick = world.timeofday
 

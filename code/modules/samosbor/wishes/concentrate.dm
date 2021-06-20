@@ -1,17 +1,20 @@
 /datum/wish/concentrate
 	name = "concentrate_wish"
 	description = ""
-	success_event = /datum/happiness_event/concentrate_desired
+	// success_event = /datum/happiness_event/concentrate_desired
 	var/list/concentrate_types = list(
-										"red" = "redcon",
-										"blue" = "bluecon",
-										"green" = "greencon",
-										"yellow" = "yellowcon"
-										)
+		/datum/reagent/concentrate/solid/red,
+		/datum/reagent/concentrate/solid/blue,
+		/datum/reagent/concentrate/solid/green,
+	)
 
-	var/list/color_translation = list("red" = "красный", "blue" = "голубой", "green" = "зелёный", "yellow" = "жёлтый")
+	var/list/color_translation = list(
+		/datum/reagent/concentrate/solid/red = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
+		/datum/reagent/concentrate/solid/blue = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
+		/datum/reagent/concentrate/solid/green = "пїЅпїЅпїЅпїЅпїЅпїЅ",
+	)
 	var/concentrate_desired = null
-	success_message = "<span class='info'>Я съел желаемый концентрат.</span>\n"
+	success_message = "<span class='info'>пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.</span>\n"
 
 
 /datum/wish/concentrate/New(var/mob/living/carbon/human/holder)
@@ -19,11 +22,9 @@
 
 	var/picked = pick(concentrate_types)
 
-	var/concentrate_type = concentrate_types[picked]
-
-	src.concentrate_desired = concentrate_type
+	src.concentrate_desired = picked
 
 	var/rus_name = color_translation[picked]
 
 
-	description = "<span class='info'>Очень хочу [rus_name] концентрат.</span>"
+	description = "<span class='info'>пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ [rus_name] пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.</span>"

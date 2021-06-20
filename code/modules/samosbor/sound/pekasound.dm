@@ -6,7 +6,7 @@
 	random_id = rand(1, 999999)
 
 /atom/proc/EmitSound(name, sound_file, radius, channel, volume_offset  = 0, kill_ambient = 0)
-	for(var/mob/M in player_list)
+	for(var/mob/M in GLOB.player_list)
 		if(!(M in hearers))
 			M.create_sound(sound_file, "[name][random_id]", channel, 0)
 
@@ -44,7 +44,7 @@
 			if(!(M in hearers(src, radius)))
 				volume = max((100 / radius) * (radius - distance) - volume_offset - 20, 0)
 			else
-				volume = max((100 / radius) * (radius - distance) - volume_offset, 0)    
+				volume = max((100 / radius) * (radius - distance) - volume_offset, 0)
 
 			M.update_sound("[name][random_id]", volume, environment)
 		else
@@ -52,7 +52,7 @@
 
 
 /atom/proc/ClearSound(name)
-	for(var/mob/M in player_list)
+	for(var/mob/M in GLOB.player_list)
 		M.remove_sound("[name][random_id]")
 
 /mob

@@ -1,8 +1,8 @@
 /datum/wish/round_wish
 	name = "round_wish"
 	description = ""
-	success_event = /datum/happiness_event/round_wish
-	success_message = "<span class='info'>Я исполнил своё давнее желание.</span>\n"
+	// success_event = /datum/happiness_event/round_wish
+	success_message = "<span class='info'>пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ.</span>\n"
 
 
 /datum/wish/round_wish/erp
@@ -17,7 +17,7 @@
 	..(holder)
 
 	var/list/mob/living/carbon/human/possible_targets = list()
-	for(var/mob/living/carbon/human/H in player_list)
+	for(var/mob/living/carbon/human/H in GLOB.player_list)
 		if(H != holder)
 			possible_targets += H
 
@@ -25,9 +25,9 @@
 		target = pick(possible_targets)
 
 	if(target != null)
-		description = "Я хочу трахнуть [target.real_name]."
+		description = "пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ [target.real_name]."
 	else
-		description = "Я хочу кого-нибудь трахнуть."
+		description = "пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ-пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ."
 
 
 /datum/wish/round_wish/erp/targeted/check(var/list/data)
@@ -42,22 +42,22 @@
 
 /datum/wish/round_wish/red_concentrate
 	name = "red_concentrate_wish"
-	description = "Я хочу попробовать красный концентрат"
-	success_event = /datum/happiness_event/round_wish
-	success_message = "<span class='info'>Я исполнил своё давнее желание.</span>\n"
+	description = "пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
+	// success_event = /datum/happiness_event/round_wish
+	success_message = "<span class='info'>пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ.</span>\n"
 
 /datum/wish/round_wish/punch_targeted
 	name = "punch_targeted_wish"
-	description = "Я хочу врезать кому-то, но не знаю кому"
-	success_event = /datum/happiness_event/round_wish
-	success_message = "<span class='info'>Я исполнил своё давнее желание.</span>\n"
+	description = "пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ-пїЅпїЅ, пїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ"
+	// success_event = /datum/happiness_event/round_wish
+	success_message = "<span class='info'>пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ.</span>\n"
 	var/mob/living/carbon/human/target = null
 
 /datum/wish/round_wish/punch_targeted/New(var/mob/living/carbon/human/holder)
 	..(holder)
 
 	var/list/mob/living/carbon/human/possible_targets = list()
-	for(var/mob/living/carbon/human/H in player_list)
+	for(var/mob/living/carbon/human/H in GLOB.player_list)
 		if(H != holder)
 			possible_targets += H
 
@@ -65,9 +65,9 @@
 		target = pick(possible_targets)
 
 	if(target != null)
-		description = "Я хочу врезать."
+		description = "пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ."
 	else
-		description = "Я хочу кому-нибудь врезать."
+		description = "пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ-пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ."
 
 /datum/wish/round_wish/punch_targeted/check(var/list/data)
 	if(!target)

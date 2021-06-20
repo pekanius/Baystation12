@@ -60,6 +60,7 @@
 	var/datum/money_account/initial_account
 
 	var/list/initial_email_login = list("login" = "", "password" = "")
+	var/family_id = 0
 
 /datum/mind/New(var/key)
 	src.key = key
