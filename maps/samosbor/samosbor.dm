@@ -1,4 +1,4 @@
-#if !defined(USING_MAP_DATUM)
+#if !defined(using_map_DATUM)
 
 	#include "samosbor_areas.dm"
 	#include "samosbor_shuttles.dm"
@@ -9,9 +9,9 @@
 	#include "samosbor-inf4.dmm"
 	#include "samosbor-dev.dmm"
 
-	#include "../../code/modules/lobby_music/generic_songs.dm"
+	//#include "../../code/modules/lobby_music/generic_songs.dm"
 
-	#define USING_MAP_DATUM /datum/map/samosbor
+	#define using_map_DATUM /datum/map/samosbor
 
 #elif !defined(MAP_OVERRIDE)
 

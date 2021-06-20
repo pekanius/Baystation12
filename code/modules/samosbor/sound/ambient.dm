@@ -1,17 +1,17 @@
-/datum/controller/process/ambient
+/datum/controller/subsystem/ambient
 	var/list/processing = list()
 	var/list/currentrun = list()
 	var/min_wait_random_ambient = 100
 	var/max_wait_random_ambient = 150 //1000 - 1,5 min 2000 - 3 min 3000 - 5 min
 	var/next_speach = 0
 
-/datum/controller/process/ambient/setup()
+/datum/controller/subsystem/ambient/Initialize()
 	name = "Ambient"
-	schedule_interval = 50
+	wait = 50
 
 	next_speach = world.time + rand(min_wait_random_ambient, max_wait_random_ambient)
 
-/datum/controller/process/ambient/doWork()
+/datum/controller/subsystem/ambient/fire(resumed = 0)
 	if(next_speach < world.time)
 		random_ambient()
 		next_speach = world.time + rand(min_wait_random_ambient, max_wait_random_ambient)
@@ -48,10 +48,13 @@
 				if(src.ambientmusic && src.ambientmusic.len)
 					L.client.sound_system.AlterMusic(pick(src.ambientmusic), time = 100)
 
-/datum/controller/process/ambient/proc/random_ambient()
+/datum/controller/subsystem/ambient/proc/random_ambient()
 	for(var/area/A in world)
 		A.random_music()
-		SCHECK
+		//if (no_mc_tick)
+		CHECK_TICK
+		//else if (MC_TICK_CHECK)
+			//break
 		if(istype(A, /area/khruschevka/anomaly_levels))
 			var/sound/S = sound(pick(A.ambientsounds_ungrd))
 			if(istype(S))
@@ -62,4 +65,3 @@
 				for(var/mob/M in A)
 					if(M.client)
 						M << S
-

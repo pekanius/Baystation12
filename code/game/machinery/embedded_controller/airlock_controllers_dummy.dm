@@ -8,7 +8,7 @@
 	var/datum/topic_state/remote/remote_state
 	var/obj/machinery/embedded_controller/radio/airlock/master_controller
 
-/obj/machinery/dummy_airlock_controller/Process()
+/obj/machinery/dummy_airlock_controller/subsystem()
 	if(master_controller)
 		appearance = master_controller
 	. = ..()

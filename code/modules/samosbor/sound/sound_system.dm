@@ -142,7 +142,7 @@ When a client is created, this creates a sound system datum for them.
 client
 	var
 		sound_system/sound_system
-		var/ambience_playing = 1
+		// var/ambience_playing = 1
 		var/music_playing
 		var/state_ambience_change
 //		var/area/area_music

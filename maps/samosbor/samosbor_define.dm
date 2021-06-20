@@ -3,7 +3,7 @@
 	full_name = "samosbor"
 	path = "samosbor"
 
-	lobby_icon = 'maps/samosbor/samosbor_lobby.dmi'
+	//lobby_icon = 'maps/samosbor/samosbor_lobby.dmi'
 	//lobby_tracks = list(/music_track/absconditus)
 
 	station_levels = list(1, 2, 3, 4, 5, 6, 7, 8, 9)

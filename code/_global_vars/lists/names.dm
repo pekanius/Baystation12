@@ -12,5 +12,6 @@ GLOBAL_LIST_INIT(clown_names, world.file2list("config/names/clown.txt"))
 
 GLOBAL_LIST_INIT(verbs, world.file2list("config/names/verbs.txt"))
 GLOBAL_LIST_INIT(adjectives, world.file2list("config/names/adjectives.txt"))
+GLOBAL_LIST_INIT(rus_last_names, world.file2list("config/surnames.txt"))
 //loaded on startup because of "
 //would include in rsc if ' was used

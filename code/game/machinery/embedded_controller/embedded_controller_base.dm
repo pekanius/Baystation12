@@ -33,7 +33,7 @@
 	if(program)
 		return program.receive_user_command(href_list["command"]) // Any further sanitization should be done in here.
 
-/obj/machinery/embedded_controller/Process()
+/obj/machinery/embedded_controller/subsystem()
 	if(program)
 		program.process()
 
@@ -77,7 +77,7 @@ obj/machinery/embedded_controller/radio/Destroy()
 		if(docking_program.override_enabled)
 			overlays += image(icon, "indicator_forced")
 		airlock_program = docking_program.airlock_program
-	
+
 	if(istype(airlock_program) && airlock_program.memory["processing"])
 		if(airlock_program.memory["pump_status"] == "siphon")
 			overlays += image(icon, "screen_drain")

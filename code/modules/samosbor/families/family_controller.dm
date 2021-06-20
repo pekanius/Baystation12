@@ -1,23 +1,28 @@
-var/global/datum/controller/process/families/families_controller
 
-/datum/controller/process/families
+/datum/family_record
+	var/surname = ""
+	var/players = list()
+
+var/global/datum/controller/subsystem/families/families_controller
+
+/datum/controller/subsystem/families
 	var/list/family_players_pool = list()
 	var/list/families = list()
 
 
-/datum/controller/process/families/setup()
+/datum/controller/subsystem/families/setup()
 	name = "Families"
-	schedule_interval = 100
+	wait = 100
 	families_controller = src
 	job_master.ResetOccupations(1)
 
-/datum/controller/process/families/doWork()
+/datum/controller/subsystem/families/fire(resumed = 0)
 	job_master.ResetOccupations(0)
 	job_master.DivideOccupations(0)
 	spawn_families()
 
-/datum/controller/process/families/proc/spawn_families()
-	for(var/mob/new_player/player in player_list)
+/datum/controller/subsystem/families/proc/spawn_families()
+	for(var/mob/new_player/player in GLOB.player_list)
 		if(player && player.ready && player.mind && player.mind.assigned_role && player.client)
 			family_players_pool += player
 
@@ -66,11 +71,11 @@ var/global/datum/controller/process/families/families_controller
 						var/mob/living/C = p.create_character(T, fr.surname)
 						if(C)
 							job_master.EquipRank(C, C.mind.assigned_role, 0)
-							UpdateFactionList(player)
+							// UpdateFactionList(player)
 							qdel(player)
 					else
 						var/mob/living/C = p.create_character(null, fr.surname)
 						if(C)
 							job_master.EquipRank(C, C.mind.assigned_role, 0)
-							UpdateFactionList(C)
+							// UpdateFactionList(C)
 							qdel(player)
