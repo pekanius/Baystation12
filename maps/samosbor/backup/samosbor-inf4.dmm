@@ -24,7 +24,7 @@
 "ax" = (/turf/space,/area/space)
 "ay" = (/obj/structure/bed/chair/wood{color = "#824b28"; dir = 1; icon_state = "wooden_chair_preview"; tag = "icon-wooden_chair_preview (WEST)"},/turf/simulated/floor/tiled/monotile,/area/khruschevka/canteen)
 "az" = (/obj/structure/bed/chair/wood{tag = "icon-wooden_chair_preview (EAST)"; icon_state = "wooden_chair_preview"; dir = 4},/obj/machinery/light/small{tag = "icon-bulb1 (NORTH)"; icon_state = "bulb1"; dir = 1},/turf/simulated/floor/tiled/monotile,/area/khruschevka/canteen)
-"aA" = (/turf/simulated/shuttle/wall/corner/smoothwhite/nw,/area/supply/dock)
+"aA" = (/turf/unsimulated/wall,/area/supply/dock)
 "aB" = (/obj/machinery/light/small{tag = "icon-bulb1 (WEST)"; icon_state = "bulb1"; dir = 8},/turf/simulated/floor/tiled/monotile,/area/khruschevka/canteen)
 "aC" = (/obj/structure/railing{icon_state = "railing0"; dir = 4},/turf/unsimulated/floor/rescue_base,/area/khruschevka/utilization)
 "aD" = (/turf/simulated/floor/plating,/area/khruschevka/utilization)
@@ -40,8 +40,8 @@
 "aN" = (/obj/machinery/light/small,/turf/simulated/floor/tiled/bunker,/area/khruschevka/utilization)
 "aO" = (/obj/machinery/light/small{tag = "icon-bulb1 (NORTH)"; icon_state = "bulb1"; dir = 1},/turf/unsimulated/floor/rescue_base,/area/khruschevka/canteen)
 "aP" = (/obj/machinery/media/jukebox,/turf/simulated/floor/tiled/monotile,/area/khruschevka/canteen)
-"aQ" = (/turf/simulated/shuttle/wall{icon_state = "swall_straight"; dir = 4},/area/supply/dock)
-"aR" = (/turf/simulated/shuttle/wall/corner/smoothwhite/ne,/area/supply/dock)
+"aQ" = (/turf/simulated/floor/tiled/newluna,/area/supply/dock)
+"aR" = (/obj/machinery/embedded_controller/radio/simple_docking_controller{frequency = 1380; id_tag = "supply_shuttle"; pixel_x = 25; pixel_y = 0; req_one_access = list(13,31); tag_door = "supply_shuttle_hatch"},/turf/simulated/floor/tiled/newluna,/area/supply/dock)
 "aS" = (/obj/structure/undies_wardrobe,/turf/simulated/floor/tiled/bunker,/area/khruschevka/utilization)
 "aT" = (/obj/machinery/door/airlock/germa{key_id = "utilizators"},/obj/effect/floor_decal/spline/fancy/wood,/turf/simulated/floor/wood,/area/khruschevka/utilization)
 "aU" = (/obj/machinery/door/airlock/germa{key_id = "kitchen"; name = "kitchen"},/turf/simulated/floor/tiled/monotile,/area/khruschevka/canteen)
@@ -53,7 +53,7 @@
 "ba" = (/obj/effect/wall_over{icon_state = "over4"; dir = 8},/turf/simulated/wall,/area/khruschevka/canteen)
 "bb" = (/obj/machinery/light/small{tag = "icon-bulb1 (WEST)"; icon_state = "bulb1"; dir = 8},/turf/simulated/floor/tiled/bunker,/area/khruschevka/utilization)
 "bc" = (/obj/machinery/door/blast/regular{id = "trade_elevator"},/turf/simulated/floor/tiled/bunker{holy = 1},/area/khruschevka/canteen)
-"bd" = (/turf/simulated/shuttle/wall{icon_state = "swall_straight"; dir = 1},/area/supply/dock)
+"bd" = (/obj/machinery/light/small{tag = "icon-bulb1 (NORTH)"; icon_state = "bulb1"; dir = 1},/turf/simulated/floor/tiled/newluna,/area/supply/dock)
 "be" = (/obj/machinery/vending/dinnerware,/turf/simulated/floor/tiled/monotile,/area/khruschevka/canteen)
 "bf" = (/obj/structure/closet/crate/bin,/turf/simulated/floor/tiled/monotile,/area/khruschevka/canteen)
 "bg" = (/obj/machinery/cooker/cereal,/turf/simulated/floor/tiled/monotile,/area/khruschevka/canteen)
@@ -189,20 +189,20 @@
 "dG" = (/obj/structure/railing{icon_state = "railing0"; dir = 4},/obj/structure/stairs/south,/turf/unsimulated/floor/rescue_base,/area/khruschevka/canteen)
 "dH" = (/obj/structure/table/rack,/obj/machinery/light/small,/obj/item/weapon/material/minihoe/grabli,/obj/item/weapon/material/minihoe/grabli,/obj/item/weapon/material/minihoe/grabli,/obj/item/weapon/material/minihoe/grabli,/turf/simulated/floor/tiled/bunker,/area/khruschevka/utilization)
 "dI" = (/obj/structure/table/woodentable,/obj/item/device/radio/intercom/old_radio{pixel_x = 5; pixel_y = 5},/turf/simulated/floor/tiled/bunker,/area/khruschevka/canteen)
-"dJ" = (/obj/structure/table/woodentable,/obj/item/weapon/reagent_containers/glass/beaker/banka,/turf/simulated/floor/tiled/bunker,/area/khruschevka/canteen)
+"dJ" = (/obj/structure/table/woodentable,/obj/item/weapon/reagent_containers/glass/beaker/banka,/obj/item/germa_key/zavod,/obj/item/germa_key/zavod,/obj/item/germa_key/zavod,/turf/simulated/floor/tiled/bunker,/area/khruschevka/canteen)
 "dK" = (/obj/machinery/light/small{tag = "icon-bulb1 (EAST)"; icon_state = "bulb1"; dir = 4},/turf/simulated/floor/tiled/bunker,/area/khruschevka/canteen)
 "dL" = (/obj/machinery/light/small,/turf/simulated/floor/tiled/padik,/area/khruschevka/canteen)
 "dM" = (/obj/structure/cable{d2 = 2; icon_state = "0-2"; pixel_y = 0},/obj/machinery/power/apc/autoinit{dir = 1; pixel_y = 29},/turf/simulated/floor/tiled/bunker,/area/khruschevka/canteen)
 "dN" = (/obj/structure/cable{d2 = 2; icon_state = "0-2"; pixel_y = 0},/obj/machinery/power/port_gen/pacman{active = 1; anchored = 1; sheet_left = 50; sheets = 50},/turf/simulated/floor/tiled/bunker,/area/khruschevka/canteen)
 "dO" = (/obj/structure/cable{d2 = 2; icon_state = "0-2"; pixel_y = 0},/obj/machinery/power/port_gen/pacman{active = 1; anchored = 1; sheet_left = 50; sheets = 50},/obj/machinery/light/small{tag = "icon-bulb1 (NORTH)"; icon_state = "bulb1"; dir = 1},/turf/simulated/floor/tiled/bunker,/area/khruschevka/canteen)
-"dP" = (/obj/structure/bed/chair/wood{color = "#824b28"; dir = 1; icon_state = "wooden_chair_preview"; tag = "icon-wooden_chair_preview (WEST)"},/turf/simulated/floor/tiled/bunker,/area/khruschevka/canteen)
+"dP" = (/obj/structure/bed/chair/wood{color = "#824b28"; dir = 1; icon_state = "wooden_chair_preview"; tag = "icon-wooden_chair_preview (WEST)"},/obj/effect/landmark/start{name = "Zavhoz"},/turf/simulated/floor/tiled/bunker,/area/khruschevka/canteen)
 "dQ" = (/obj/effect/wall_over{icon_state = "over3"; dir = 4},/turf/simulated/wall,/area/khruschevka/canteen)
 "dR" = (/obj/structure/cable{icon_state = "1-4"},/turf/simulated/floor/tiled/bunker,/area/khruschevka/canteen)
 "dS" = (/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/bunker,/area/khruschevka/canteen)
 "dT" = (/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/tiled/bunker,/area/khruschevka/canteen)
 "dU" = (/obj/structure/closet/secure_closet/freezer/fridge,/turf/simulated/floor/tiled/monotile,/area/khruschevka/canteen)
 "dV" = (/obj/machinery/cooker/grill,/turf/simulated/floor/tiled/monotile,/area/khruschevka/canteen)
-"dW" = (/obj/structure/kitchenspike,/turf/simulated/floor/tiled/monotile,/area/khruschevka/canteen)
+"dW" = (/obj/effect/decal/cleanable/blood/writing,/turf/simulated/floor/tiled/padik,/area/khruschevka/canteen)
 "dX" = (/obj/structure/table/steel,/turf/simulated/floor/tiled/bunker,/area/khruschevka/canteen)
 "dY" = (/obj/machinery/light/small{tag = "icon-bulb1 (EAST)"; icon_state = "bulb1"; dir = 4},/turf/simulated/floor/tiled/monotile,/area/khruschevka/canteen)
 "dZ" = (/obj/machinery/gibber{emagged = 1},/turf/simulated/floor/tiled/monotile,/area/khruschevka/canteen)
@@ -240,11 +240,11 @@
 "eF" = (/obj/ind_furnace_part/top_1,/turf/simulated/wall,/area/khruschevka/canteen)
 "eG" = (/obj/ind_furnace_part/top_2,/turf/simulated/wall,/area/khruschevka/canteen)
 "eH" = (/obj/ind_furnace_part/part1,/turf/simulated/floor/tiled/bunker,/area/khruschevka/canteen)
-"eI" = (/obj/structure/table/reinforced,/turf/simulated/floor/tiled/bunker,/area/khruschevka/canteen)
+"eI" = (/obj/structure/table/reinforced,/obj/item/weapon/storage/toolbox/mechanical,/obj/item/weapon/solderer,/turf/simulated/floor/tiled/bunker,/area/khruschevka/canteen)
 "eJ" = (/obj/ind_cooler_part,/turf/simulated/floor/tiled/bunker,/area/khruschevka/canteen)
 "eK" = (/obj/item/weapon/stool,/turf/simulated/floor/tiled/bunker,/area/khruschevka/canteen)
 "eL" = (/obj/machinery/light/small{tag = "icon-bulb1 (WEST)"; icon_state = "bulb1"; dir = 8},/turf/simulated/floor/tiled/bunker,/area/khruschevka/canteen)
-"eM" = (/turf/simulated/floor/shuttle/blue,/area/supply/dock)
+"eM" = (/obj/machinery/light/small{tag = "icon-bulb1 (WEST)"; icon_state = "bulb1"; dir = 8},/turf/simulated/floor/tiled/padik,/area/khruschevka/canteen)
 "eN" = (/obj/ind_furnace_part/part3,/obj/machinery/light/small{tag = "icon-bulb1 (NORTH)"; icon_state = "bulb1"; dir = 1},/turf/simulated/floor/tiled/bunker,/area/khruschevka/canteen)
 "eO" = (/obj/structure/table/reinforced,/obj/item/weapon/storage/toolbox/mechanical,/turf/simulated/floor/tiled/bunker,/area/khruschevka/canteen)
 "eP" = (/obj/structure/table/reinforced,/obj/machinery/light/small,/obj/item/weapon/storage/toolbox/mechanical,/turf/simulated/floor/tiled/bunker,/area/khruschevka/canteen)
@@ -257,14 +257,26 @@
 "eW" = (/obj/item/weapon/form,/obj/item/weapon/form/small,/obj/item/weapon/form/medium,/obj/item/weapon/form/big,/obj/structure/closet,/turf/simulated/floor/tiled/bunker,/area/khruschevka/canteen)
 "eX" = (/obj/item/weapon/tank/concrete,/obj/item/weapon/tank/concrete,/obj/item/weapon/tank/concrete,/obj/item/weapon/tank/concrete,/obj/structure/closet,/turf/simulated/floor/tiled/bunker,/area/khruschevka/canteen)
 "eY" = (/obj/structure/table/reinforced,/obj/item/device/radio/intercom/old_radio,/turf/simulated/floor/tiled/bunker,/area/khruschevka/canteen)
-"eZ" = (/obj/machinery/embedded_controller/radio/simple_docking_controller{frequency = 1380; id_tag = "supply_shuttle"; pixel_x = 25; pixel_y = 0; req_one_access = list(13,31); tag_door = "supply_shuttle_hatch"},/turf/simulated/floor/shuttle/blue,/area/supply/dock)
+"eZ" = (/obj/effect/wall_over{icon_state = "over4"; dir = 4},/turf/simulated/wall,/area/khruschevka/canteen)
 "fa" = (/obj/machinery/conveyor{dir = 4; id = "QMLoad2"},/obj/machinery/door/airlock/external{frequency = 1380; icon_state = "door_locked"; id_tag = "supply_shuttle_hatch"; locked = 1; name = "Shuttle Hatch"; req_access = list(13)},/turf/simulated/floor/plating,/area/supply/dock)
 "fb" = (/obj/machinery/door/airlock/external{frequency = 1380; icon_state = "door_locked"; id_tag = "supply_shuttle_hatch"; locked = 1; name = "Shuttle Hatch"; req_access = list(13)},/obj/effect/shuttle_landmark/supply/centcom,/turf/simulated/floor/shuttle/blue,/area/supply/dock)
-"fc" = (/turf/simulated/shuttle/wall/corner/smoothwhite/sw,/area/supply/dock)
-"fd" = (/turf/simulated/shuttle/wall/corner/smoothwhite/se,/area/supply/dock)
-"fe" = (/obj/machinery/embedded_controller/radio/simple_docking_controller{frequency = 1380; id_tag = "cargo_bay"; name = "cargo bay hatch controller"; pixel_x = -30; pixel_y = 0; req_one_access = list(13,31); tag_door = "cargo_bay_door"},/obj/machinery/camera/network/civilian_west{c_tag = "Cargo Recieving Dock"; dir = 4},/turf/simulated/floor/tiled,/area/khruschevka/canteen)
+"fc" = (/obj/effect/decal/cleanable/blood/writing,/obj/effect/decal/cleanable/blood,/turf/simulated/floor/tiled/bunker,/area/khruschevka/canteen)
+"fd" = (/obj/effect/decal/cleanable/cobweb,/turf/unsimulated/floor/rescue_base,/area/khruschevka)
+"fe" = (/obj/machinery/embedded_controller/radio/simple_docking_controller{frequency = 1380; id_tag = "cargo_bay"; name = "cargo bay hatch controller"; pixel_x = -30; pixel_y = 0; req_one_access = list(13,31); tag_door = "cargo_bay_door"},/turf/simulated/floor/tiled,/area/khruschevka/canteen)
 "ff" = (/obj/machinery/computer/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{tag = "icon-intact-scrubbers (EAST)"; icon_state = "intact-scrubbers"; dir = 4},/turf/simulated/floor/tiled,/area/khruschevka/canteen)
 "fg" = (/obj/effect/shuttle_landmark/supply/station,/turf/space,/area/space)
+"fh" = (/obj/effect/decal/cleanable/blood/writing,/turf/unsimulated/floor/rescue_base,/area/khruschevka)
+"fi" = (/obj/structure/table/steel,/turf/unsimulated/floor/rescue_base,/area/khruschevka)
+"fj" = (/obj/structure/kitchenspike,/obj/effect/decal/cleanable/vomit,/turf/simulated/floor/tiled/monotile,/area/khruschevka/canteen)
+"fk" = (/obj/structure/kitchenspike,/obj/effect/decal/cleanable/cobweb2,/turf/simulated/floor/tiled/monotile,/area/khruschevka/canteen)
+"fl" = (/obj/structure/sink{dir = 8; icon_state = "sink"; layer = 3.4; pixel_x = -4; pixel_y = 18},/turf/unsimulated/floor/rescue_base,/area/khruschevka)
+"fm" = (/obj/effect/decal/cleanable/blood,/obj/effect/decal/cleanable/blood/writing,/turf/unsimulated/floor/rescue_base,/area/khruschevka)
+"fn" = (/obj/effect/decal/cleanable/blood,/obj/effect/decal/cleanable/blood/writing{icon_state = "tracks"; dir = 10},/turf/unsimulated/floor/rescue_base,/area/khruschevka)
+"fo" = (/obj/effect/decal/cleanable/blood/writing{icon_state = "tracks"; dir = 8},/turf/unsimulated/floor/rescue_base,/area/khruschevka)
+"fp" = (/obj/effect/decal/cleanable/blood/writing{icon_state = "tracks"; dir = 8},/turf/simulated/floor/tiled/monotile,/area/khruschevka/canteen)
+"fq" = (/obj/structure/table/steel,/obj/effect/decal/cleanable/blood,/turf/unsimulated/floor/rescue_base,/area/khruschevka)
+"fr" = (/obj/structure/closet/crate,/obj/item/weapon/storage/firstaid/surgery,/turf/unsimulated/floor/rescue_base,/area/khruschevka)
+"fs" = (/obj/structure/table/reinforced,/obj/item/pripoy,/obj/item/pripoy,/turf/simulated/floor/tiled/bunker,/area/khruschevka/canteen)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -386,13 +398,13 @@ aaaaalanananananawamamalararazaoapararararararararbhaWaWaWbcaxaxaxaxaxalaWaWaWal
 aaaaalanananananawamamalaqararayarararararararararbhaWaWaWbcfgaxaxaxaxaleLaWaWeyaWaWeDalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaabkaIepepepbubvbNbNaIaoaparararaJaKalbPararararbhaWaWaWeFaxaxaxaxaxaleSeSeSalaWaWeDalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaabRbSbobobobobZboboarararararaPalalalalbnalalalaldIdJdKaleFeGalalalaleEaleEalaWaWaWalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaabRbodLbobobodLboboararararararaUaralaWaWdMdNdOaldPaWaWaleHeteNeCeueJezeBeAaWaWaWdKalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaadQaZaZaZaZaZaZaZaZaZbaaoaoaKalalaralalaWdRdSdTaWaWaWaWalaWaWaWaWaWaWaWaWaWaWaWaWaWalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-araaaaaaaaaaaldUdVdWdWalbearararalbfarbgalecaWaWaWaWaWaWaWbnaWaWaWaWaWaWaWaWaWaWaWeKeOalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaldUarararbiarararararararbjaldXaWaWaWaWaWaWdKalalaWalalalaWalalalaWaWaWeIalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaldUarardYalblarbmararaoararbnaWaWaWaWaWaWaWaWalaWaWaWalaWaWaWaWaleTeKeKaWalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaldUarardZalbpbqbrarbsaoarbtaleaeaebeaeaeaeaeaaleUaWeValeWeXaWaWaleOeOePeYalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalaleEeEalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaabReMbobobobodLboboararararararaUaralaWaWdMdNdOaldPaWaWaleHeteNeCeueJezeBeAaWaWaWdKalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaadQbadWeZaZaZaZaZaZaZbaaoaoaKalalaralalaWdRdSdTaWaWaWaWalaWaWaWaWaWaWaWfcaWaWaWaWaWalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+araaalfdfhfialdUdVfjfkalbearararalbfarbgalecaWaWaWaWaWaWaWbnaWaWaWaWaWaWaWaWaWaWaWeKeIalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaalflfmfialdUarararbiarararararararbjaldXaWaWaWaWaWaWdKalalaWalalalaWalalalaWaWaWfsalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaalaafnfofpararardYalblarbmararaoararbnaWaWaWaWaWaWaWaWalaWaWaWalaWaWaWaWaleTeKeKaWalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaalfifqfraldUdUardZalbpbqbrarbsaoarbtaleaeaebeaeaeaeaeaaleUaWeValeWeXaWaWaleOeOePeYalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalaleEeEalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -404,10 +416,10 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaQaQaQaRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafaeMeMeMbdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafbeMeMeZbdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafcaQaQaQfdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaAaAaAaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafaaQbdaQaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafbaQaQaRaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaAaAaAaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa

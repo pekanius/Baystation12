@@ -22,10 +22,12 @@
 			var/volume = 0
 			var/environment = 0
 
-			if(istype(src,/mob/living/))
+			if(istype(src, /mob/living/))
 				var/mob/living/L = src
-				if (L.hallucination)
-					environment = PSYCHOTIC
+				if(istype(src, /mob/living/carbon))
+					var/mob/living/carbon/C = src
+					if (C.hallucination_duration)
+						environment = PSYCHOTIC
 				else if (L.druggy)
 					environment = DRUGGED
 				else if (L.drowsyness)

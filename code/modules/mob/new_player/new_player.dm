@@ -336,7 +336,7 @@
 	dat = header + dat
 	show_browser(src, jointext(dat, null), "window=latechoices;size=450x640;can_close=1")
 
-/mob/new_player/proc/create_character(var/turf/spawn_turf)
+/mob/new_player/proc/create_character(var/turf/spawn_turf, var/surname = "")
 	spawning = 1
 	close_spawn_windows()
 
@@ -368,6 +368,8 @@
 	new_character.lastarea = get_area(spawn_turf)
 
 	client.prefs.copy_to(new_character)
+	new_character.name = "[new_character.real_name] [surname]"
+	new_character.real_name = "[new_character.real_name] [surname]"
 
 	sound_to(src, sound(null, repeat = 0, wait = 0, volume = 85, channel = GLOB.lobby_sound_channel))// MAD JAMS cant last forever yo
 

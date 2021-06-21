@@ -64,8 +64,6 @@ var/global/datum/controller/subsystem/families/families_controller
 
 					p.mind.family_id = id
 
-					p.char_rank = p.mind.assigned_role
-
 
 					if(p.mind.assigned_role == "Dweller")
 						var/mob/living/C = p.create_character(T, fr.surname)

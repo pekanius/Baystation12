@@ -11,7 +11,7 @@ var/datum/controller/transfer_controller/transfer_controller
 	STOP_PROCESSING(SSprocessing, src)
 	. = ..()
 
-/datum/controller/transfer_controller/subsystem()
+/datum/controller/transfer_controller/Process()
 	if (time_till_transfer_vote() <= 0)
 		SSvote.initiate_vote(/datum/vote/transfer, automatic = 1)
 		timerbuffer += config.vote_autotransfer_interval
