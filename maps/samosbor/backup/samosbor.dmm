@@ -12,17 +12,35 @@
 "l" = (/turf/unsimulated/floor/rescue_base,/area/khruschevka/eleven)
 "m" = (/turf/unsimulated/floor/rescue_base,/area/khruschevka/twelve)
 "n" = (/turf/unsimulated/floor/rescue_base,/area/centcom)
-"p" = (/obj/structure/disposalpipe/up{icon_state = "pipe-u"; dir = 4},/turf/simulated/wall,/area/khruschevka/anomaly_levels)
-"q" = (/obj/structure/disposalpipe/segment{tag = "icon-pipe-s (EAST)"; icon_state = "pipe-s"; dir = 4},/turf/simulated/wall,/area/khruschevka/anomaly_levels)
-"r" = (/obj/structure/disposalpipe/segment{tag = "icon-pipe-c"; icon_state = "pipe-c"; dir = 2},/turf/simulated/wall,/area/khruschevka/anomaly_levels)
+"o" = (/turf/simulated/wall,/area/khruschevka/anomaly_levels)
+"p" = (/obj/effect/wall_over{icon_state = "over3"; dir = 1},/obj/structure/disposalpipe/up{icon_state = "pipe-u"; dir = 4},/turf/simulated/wall,/area/khruschevka/anomaly_levels)
+"q" = (/obj/structure/disposalpipe/segment{tag = "icon-pipe-s (EAST)"; icon_state = "pipe-s"; dir = 4},/obj/effect/wall_over{icon_state = "over1"; dir = 1},/turf/simulated/wall,/area/khruschevka/anomaly_levels)
+"r" = (/obj/structure/disposalpipe/segment{tag = "icon-pipe-c"; icon_state = "pipe-c"; dir = 2},/obj/effect/wall_over{icon_state = "over1"; dir = 1},/turf/simulated/wall,/area/khruschevka/anomaly_levels)
+"s" = (/obj/effect/wall_over{icon_state = "over1"; dir = 1},/turf/simulated/wall,/area/khruschevka/anomaly_levels)
+"t" = (/obj/effect/wall_over{icon_state = "over3"},/turf/simulated/wall,/area/khruschevka/anomaly_levels)
 "u" = (/turf/simulated/floor/plating,/area/khruschevka/anomaly_levels)
-"w" = (/turf/simulated/floor/tiled/dark,/area/khruschevka/anomaly_levels)
+"v" = (/obj/effect/wall_over{icon_state = "over1"; dir = 8},/turf/simulated/wall,/area/khruschevka/anomaly_levels)
+"w" = (/turf/simulated/floor/tiled/rust,/area/khruschevka/anomaly_levels)
 "x" = (/obj/structure/disposalpipe/broken{dir = 1; icon_state = "pipe-b"; layer = 3.1; pixel_y = 3; plane = -10; tag = "icon-pipe-b (NORTH)"},/turf/simulated/floor/plating,/area/khruschevka/anomaly_levels)
+"y" = (/obj/effect/wall_over{icon_state = "over1"; dir = 4},/turf/simulated/wall,/area/khruschevka/anomaly_levels)
 "z" = (/obj/turbolift_map_holder/samosbor,/turf/simulated/floor/plating,/area/khruschevka/anomaly_levels)
 "A" = (/turf/simulated/floor/tiled/padik,/area/khruschevka/anomaly_levels)
+"B" = (/obj/effect/wall_over{icon_state = "over3"; dir = 1},/turf/simulated/wall,/area/khruschevka/anomaly_levels)
+"C" = (/obj/effect/wall_over{icon_state = "over4"; dir = 1},/turf/simulated/wall,/area/khruschevka/anomaly_levels)
+"D" = (/obj/effect/wall_over{icon_state = "over4"},/turf/simulated/wall,/area/khruschevka/anomaly_levels)
+"E" = (/obj/effect/wall_over{icon_state = "over1"; dir = 1},/obj/effect/wall_over{icon_state = "over3"; dir = 4},/turf/simulated/wall,/area/khruschevka/anomaly_levels)
+"F" = (/obj/effect/wall_over{icon_state = "over4"; dir = 1},/obj/effect/wall_over{icon_state = "over2"; dir = 4},/obj/effect/wall_over{icon_state = "over4"; dir = 8},/turf/simulated/wall,/area/khruschevka/anomaly_levels)
+"G" = (/obj/effect/wall_over{icon_state = "over4"},/obj/effect/wall_over{icon_state = "over2"; dir = 8},/obj/effect/wall_over{icon_state = "over4"; dir = 4},/turf/simulated/wall,/area/khruschevka/anomaly_levels)
+"H" = (/obj/effect/wall_over{icon_state = "over1"; dir = 1},/obj/effect/wall_over,/turf/simulated/wall,/area/khruschevka/anomaly_levels)
+"I" = (/obj/effect/wall_over{icon_state = "over3"},/obj/effect/wall_over{icon_state = "over3"; dir = 8},/turf/simulated/wall,/area/khruschevka/anomaly_levels)
 "J" = (/obj/machinery/samosbor_siren,/turf/simulated/floor/plating,/area/khruschevka/anomaly_levels)
 "K" = (/obj/machinery/light/small{tag = "icon-bulb1 (NORTH)"; icon_state = "bulb1"; dir = 1},/turf/simulated/floor/tiled/padik,/area/khruschevka/anomaly_levels)
-"Q" = (/turf/simulated/wall,/area/khruschevka/anomaly_levels)
+"L" = (/obj/effect/wall_over{icon_state = "over5"; dir = 4},/turf/simulated/wall,/area/khruschevka/anomaly_levels)
+"M" = (/obj/effect/wall_over{icon_state = "over3"; dir = 4},/turf/simulated/wall,/area/khruschevka/anomaly_levels)
+"N" = (/obj/effect/wall_over,/turf/simulated/wall,/area/khruschevka/anomaly_levels)
+"O" = (/obj/effect/wall_over{icon_state = "over4"; dir = 8},/obj/effect/wall_over{icon_state = "over5"; dir = 1},/turf/simulated/wall,/area/khruschevka/anomaly_levels)
+"P" = (/obj/effect/wall_over{icon_state = "over5"; dir = 8},/turf/simulated/wall,/area/khruschevka/anomaly_levels)
+"Q" = (/obj/effect/wall_over{icon_state = "over3"; dir = 8},/turf/simulated/wall,/area/khruschevka/anomaly_levels)
 "R" = (/turf/simulated/floor/plating{holy = 1},/area/khruschevka/anomaly_levels)
 "S" = (/turf/unsimulated/floor/rescue_base,/area/khruschevka/anomaly_levels)
 "T" = (/obj/structure/disposalpipe/down{icon_state = "pipe-d"; dir = 1},/turf/unsimulated/floor/rescue_base,/area/khruschevka/three)
@@ -347,18 +365,18 @@ nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
 nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-ccQQQQQQpqqqrQQccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-ccQuuuuuQwwuxuQccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-ccQuuuuuQwwwuuQccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-ccQuuuuuQwwwwuQccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-ccQuuuuuQwwwwwQccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-ccQzuuuuQAAwwwQSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScccccccccccccccccccccccc
-ccQQAAAQQQAAQQQSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScccccccccccccccccccccccc
-ccQJuAAAKAAAAuQSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScccccccccccccccccccccccc
-ccQuuuAAuuAAuuRSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScccccccccccccccccccccccc
-ccQQQQQQQQuuuuQSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScccccccccccccccccccccccc
-ccSSSSSSSQQQQQQSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScccccccccccccccccccccccc
-ccSSSSSSSSSSSSQSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScccccccccccccccccccccccc
+ccoooooopqqqrstccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+ccouuuuuvwwuxuyccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+ccouuuuuvwwwuuyccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+ccouuuuuvwwwwuyccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+ccouuuuuvwwwwwyccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+ccozuuuuvAAwwwySSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScccccccccccccccccccccccc
+ccBCAAADEFAAGHISSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScccccccccccccccccccccccc
+ccvJuAAAKAAAAuLSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScccccccccccccccccccccccc
+ccvuuuAAuuAAuuRSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScccccccccccccccccccccccc
+ccMNNNNNNOuuuuPSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScccccccccccccccccccccccc
+ccSSSSSSSMNNNNQSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScccccccccccccccccccccccc
+ccSSSSSSSSSSSSoSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScccccccccccccccccccccccc
 cccccccccccccccSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScccccccccccccccccccccccc
 cccccccccccccccSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScccccccccccccccccccccccc
 cccccccccccccccSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScccccccccccccccccccccccc

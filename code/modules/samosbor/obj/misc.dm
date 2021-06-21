@@ -27,12 +27,12 @@
 	name = "Vendor cartridge (Food)"
 	cart_type = "food"
 	icon_state = "cart_food"
-	items = list(/obj/item/weapon/reagent_containers/food/snacks/foodbricket = 10)
+	items = list(/obj/item/reagent_containers/food/snacks/foodbricket = 10)
 
 /obj/item/weapon/disp_cartridge/conc
 	name = "Vendor cartridge (Gel Concetrate)"
 	cart_type = "concentrate"
 	icon_state = "cart_conc"
-	items = list(/obj/item/weapon/reagent_containers/food/snacks/concentrate/gel/yellow = 2,
-				/obj/item/weapon/reagent_containers/food/snacks/concentrate/gel/blue = 2,
-				/obj/item/weapon/reagent_containers/food/snacks/concentrate/gel/green = 2)
+	items = list(/obj/item/reagent_containers/food/snacks/concentrate/gel/yellow = 2,
+				/obj/item/reagent_containers/food/snacks/concentrate/gel/blue = 2,
+				/obj/item/reagent_containers/food/snacks/concentrate/gel/green = 2)

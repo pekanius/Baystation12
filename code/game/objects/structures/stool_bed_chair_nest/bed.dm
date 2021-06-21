@@ -21,6 +21,8 @@
 	var/base_icon = "bed"
 	var/material_alteration = MATERIAL_ALTERATION_ALL
 	var/buckling_sound = 'sound/effects/buckle.ogg'
+	var/latejoin = 0
+	var/group = 0
 
 /obj/structure/bed/New(newloc, new_material = DEFAULT_FURNITURE_MATERIAL, new_padding_material)
 	..(newloc)

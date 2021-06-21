@@ -95,12 +95,12 @@
 	desc = "An old concetrate vending machine."
 	icon = 'icons/samosbor/obj/misc.dmi'
 	icon_state = "conc_disp"
-	products = list(/obj/item/weapon/reagent_containers/food/snacks/concentrate/gel/yellow = 3,
-					/obj/item/weapon/reagent_containers/food/snacks/concentrate/gel/blue   = 3,
-					/obj/item/weapon/reagent_containers/food/snacks/concentrate/gel/green  = 3)
-	prices   = list(/obj/item/weapon/reagent_containers/food/snacks/concentrate/gel/yellow = 1,
-					/obj/item/weapon/reagent_containers/food/snacks/concentrate/gel/blue   = 1,
-					/obj/item/weapon/reagent_containers/food/snacks/concentrate/gel/green  = 1)
+	products = list(/obj/item/reagent_containers/food/snacks/concentrate/gel/yellow = 3,
+					/obj/item/reagent_containers/food/snacks/concentrate/gel/blue   = 3,
+					/obj/item/reagent_containers/food/snacks/concentrate/gel/green  = 3)
+	prices   = list(/obj/item/reagent_containers/food/snacks/concentrate/gel/yellow = 1,
+					/obj/item/reagent_containers/food/snacks/concentrate/gel/blue   = 1,
+					/obj/item/reagent_containers/food/snacks/concentrate/gel/green  = 1)
 	vending_type = "concentrate"
 
 /obj/machinery/vending/samosbor/foodbrickets
@@ -108,6 +108,6 @@
 	desc = "An old food vending machine."
 	icon = 'icons/samosbor/obj/misc.dmi'
 	icon_state = "food_disp"
-	products = list(/obj/item/weapon/reagent_containers/food/snacks/foodbricket = 15)
-	prices = list(/obj/item/weapon/reagent_containers/food/snacks/foodbricket = 1)
+	products = list(/obj/item/reagent_containers/food/snacks/foodbricket = 15)
+	prices = list(/obj/item/reagent_containers/food/snacks/foodbricket = 1)
 	vending_type = "food"

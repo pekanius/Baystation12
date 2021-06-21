@@ -11,6 +11,5 @@
 	desc = "Drymate brand solid concentrate. Just add water!"
 	icon = 'icons/samosbor/obj/food/concentrate_solid_crate.dmi'
 	icon_state = "intact-locked"
-	can_hold   = list(/obj/item/weapon/reagent_containers/food/snacks/concentrate/solid/white)
-	startswith = list(/obj/item/weapon/reagent_containers/food/snacks/concentrate/solid/white = 5)
-
+	can_hold   = list(/obj/item/reagent_containers/food/snacks/concentrate/solid/white)
+	startswith = list(/obj/item/reagent_containers/food/snacks/concentrate/solid/white = 5)
