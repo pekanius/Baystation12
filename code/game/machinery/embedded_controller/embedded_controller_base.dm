@@ -33,7 +33,7 @@
 	if(program)
 		return program.receive_user_command(href_list["command"]) // Any further sanitization should be done in here.
 
-/obj/machinery/embedded_controller/subsystem()
+/obj/machinery/embedded_controller/proc/subsystem()
 	if(program)
 		program.process()
 

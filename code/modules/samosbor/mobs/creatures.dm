@@ -34,7 +34,7 @@
 
 	speed = 4
 
-	icon = 'icons/samosbor/creatures.dmi'
+	icon = 'icons/samosbor/mob/creatures.dmi'
 	icon_state = "heavy"
 
 	faction = "samosbor"
@@ -42,7 +42,7 @@
 /mob/living/simple_animal/melee/samosbor/heavy/Allow_Spacemove(var/check_drift = 0)
 	return 1
 
-/mob/living/simple_animal/melee/samosbor/heavy/finish()
+/mob/living/simple_animal/melee/samosbor/heavy/proc/finish()
 	src.visible_message("<span class='danger'>[src] ����&#255;��&#255; �������� ������ [target_mob]</span>")
 	if(!do_after(src,30,target_mob))
 		src.visible_message("<span class='danger'>[src] ������� ������ [target_mob]</span>")
@@ -52,7 +52,7 @@
 	if(prob(5))
 		playsound(src, 'sound/samosbor/scream1.ogg', 100, 1)
 
-/mob/living/simple_animal/melee/samosbor/heavy/find_target()
+/mob/living/simple_animal/melee/samosbor/heavy/proc/find_target()
 	. = ..()
 	if(.)
 		playsound(src, 'sound/samosbor/scream1.ogg', 100, 1)
