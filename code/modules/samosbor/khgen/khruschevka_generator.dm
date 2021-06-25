@@ -103,9 +103,7 @@
 	points.Add(item)
 
 /datum/spawnpoints/proc/PickPoint()
-	var/p = points
-	var/pl = points.len
-	if(!istype(p) || !pl.len || !p)
+	if(!istype(points) || !points)
 		error("There is no spawnpoints. Are there existing on map?")
 		crash_with("ERROR: There is no spawnpoints. Are there existing on map?")
 	return pick(points)
