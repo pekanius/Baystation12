@@ -34,7 +34,7 @@ var/global/datum/controller/subsystem/samosbor/Samosbor = null
 
 /obj/item/weapon/reagent_containers/samosbor_act(amount)
 	..()
-	for(var/datum/reagent/R in reagents)
+	for(var/datum/reagent/R in reagents/reagents)
 		R.samosbor_act(amount)
 
 /datum/reagents/proc/samosbor_act(amount)
