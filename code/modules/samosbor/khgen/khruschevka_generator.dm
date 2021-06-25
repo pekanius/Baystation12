@@ -112,8 +112,8 @@
 
 	var/is_odd = level % 2
 
-	//if(KH_INVERTED)
-	is_odd = !is_odd
+	if(KH_INVERTED == TRUE)
+		is_odd = !is_odd
 
 
 	if(is_odd)
@@ -148,8 +148,8 @@
 	var/list/blueprint_turfs = null
 	var/is_odd = loc.z % 2
 
-	//if(KH_INVERTED)
-	is_odd = !is_odd
+	if(KH_INVERTED == TRUE)
+		is_odd = !is_odd
 
 	if(is_odd)
 		blueprint_turfs = get_area_turfs(blueprint)
