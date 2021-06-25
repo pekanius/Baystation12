@@ -73,7 +73,7 @@ atom
 			return
 
 		var/chan
-		var/stat = 0
+		//var/stat = 0
 		var/vol
 		var/distance
 		for(var/mob/M in GLOB.player_list) //First we stoping leaved mobs ambient.
@@ -100,19 +100,20 @@ atom
 					M.ambient_sounds -= src
 					ambient_hearers -= M
 					continue
-				stat = SOUND_UPDATE
+				//stat = SOUND_UPDATE
 
 			else
 				chan = M.GetFreeAmbientChannel()
 				if(chan == 0) //IF STILL 0 THERE WILL BE BLOOD
 					continue
-				stat = 0
+				//stat = 0
 				M.ambient_sounds[src] = chan
 				ambient_hearers += M
 
 			vol = (ambient_volume * (1 - distance/ambient_range)) * 100//calculating volume
 
-			M.playsound_local(T, soundin = src.ambient_sound, vol = vol, channel = chan, status = stat, repeat = 1, vary = 0)
+			//M.playsound_local(T, soundin = src.ambient_sound, vol = vol, channel = chan, status = stat, repeat = 1, vary = 0)
+			M.playsound_local(T, sound(src.ambient_sound, repeat = 1, wait = 0, volume = vol, channel = GLOB.ambience_sound_channel)) //, status = stat, vary = 0))
 
 	proc/StopAmbient()
 		var/sound/null_sound = sound(null)

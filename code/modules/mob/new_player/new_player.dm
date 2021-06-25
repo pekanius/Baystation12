@@ -199,7 +199,8 @@
 	if(job.is_restricted(client.prefs, src))
 		return
 
-	var/datum/spawnpoint/spawnpoint = job.get_spawnpoint(client)
+	//var/datum/spawnpoint/spawnpoint = job.get_spawnpoint(client)
+	var/datum/spawnpoint/spawnpoint = job.get_spawnpoint(client, client.prefs.ranks[job.title])
 	var/turf/spawn_turf = pick(spawnpoint.turfs)
 	if(job.latejoin_at_spawnpoints)
 		var/obj/S = job.get_roundstart_spawnpoint()

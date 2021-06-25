@@ -279,8 +279,10 @@
 
 
 
+// INITIALIZE_IMMEDIATE(/obj/effect/kh_spawner)
 
 /obj/effect/kh_spawner/Initialize()
+	. = ..()
 	//warning("S INIT")
 	for(var/turf/T in NewTurfs)
 		//new /atom/movable/lighting_overlay(T, TRUE)
