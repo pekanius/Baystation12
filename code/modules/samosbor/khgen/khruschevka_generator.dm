@@ -288,7 +288,7 @@
 			GLOB.family_join["[family_len]"] = S
 
 
-// INITIALIZE_IMMEDIATE(/obj/effect/kh_spawner)
+INITIALIZE_IMMEDIATE(/obj/effect/kh_spawner)
 
 /obj/effect/kh_spawner/Initialize()
 	. = ..()
