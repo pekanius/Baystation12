@@ -5,7 +5,7 @@
 	desc = "Don't try to understand samosbor"
 	icon_living = "heavy"
 	icon_dead = "faithless_dead"
-	speak_chance = 0
+	var/speak_chance = 0
 	turns_per_move = 5
 	response_help = "pokes"
 	response_disarm = "shoves"
@@ -15,8 +15,8 @@
 	health = 80
 
 	harm_intent_damage = 10
-	melee_damage_lower = 15
-	melee_damage_upper = 15
+	var/melee_damage_lower = 15
+	var/melee_damage_upper = 15
 	attacktext = "��� ����&#255;��"
 	attack_sound = 'sound/hallucinations/growl1.ogg'
 
@@ -52,7 +52,7 @@
 	if(prob(5))
 		playsound(src, 'sound/samosbor/scream1.ogg', 100, 1)
 
-/mob/living/simple_animal/melee/samosbor/heavy/find_target()
+/mob/living/simple_animal/melee/samosbor/heavy/proc/find_target()
 	. = ..()
 	if(.)
 		playsound(src, 'sound/samosbor/scream1.ogg', 100, 1)
@@ -61,7 +61,7 @@
 		// L.Stun(3)
 		// L.visible_message("<span class='danger'>[L] �� ����� �����������&#255; �� ������</span>")
 
-/mob/living/simple_animal/melee/samosbor/heavy/engage_target()
+/mob/living/simple_animal/melee/samosbor/heavy/proc/engage_target()
 	. =..()
 	var/mob/living/L = .
 	if(istype(L))

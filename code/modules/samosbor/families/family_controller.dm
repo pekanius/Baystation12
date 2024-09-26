@@ -59,11 +59,13 @@ var/global/datum/controller/subsystem/families/families_controller
 
 				for(var/mob/new_player/p in fr.players)
 					var/datum/spawnpoints/S = GLOB.family_join["[id]"]
+					if(!istype(S) || !GLOB.family_join.len || !S)
+						error("There is no family_join.")
+						crash_with("ERROR: There is no family_join.")
 
 					var/turf/T = get_turf(S.PickPoint())
 
 					p.mind.family_id = id
-
 
 					if(p.mind.assigned_role == "Dweller")
 						var/mob/living/C = p.create_character(T, fr.surname)
